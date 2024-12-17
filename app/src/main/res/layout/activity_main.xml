@@ -1,0 +1,651 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- the  light orange portion-->
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#F2AD73"
+            android:orientation="vertical">
+
+            <!-- to get the clear view of the first line in phone-->
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:text=""
+                />
+            <!--  first line-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_assignment_late_24"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textColor="#050505"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textColor="#8A7972"
+                        android:textSize="15dp"
+                        android:text="Vadakkepura House,Angamaly"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_account_circle_24"
+                    android:layout_marginLeft="120dp"/>
+
+            </LinearLayout>
+            <!-- search box-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="350dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/search_box_background"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Magnifying Glass Icon -->
+                <ImageView
+                    android:id="@+id/icon_search"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_search"
+                    android:contentDescription="Search Icon"
+                    android:layout_marginEnd="8dp" />
+
+                <!-- Input Text Field -->
+                <EditText
+                    android:id="@+id/search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Search for restaurants, cuisines, or dishes"
+                    android:textColor="#000000"
+                    android:textColorHint="#808080"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text" />
+
+                <!-- Microphone Icon -->
+                <ImageView
+                    android:id="@+id/icon_mic"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_mic"
+                    android:contentDescription="Mic Icon"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+
+            <!--feast mode on title with 2 image-->
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="88dp"
+                    android:layout_height="93dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/food1"
+                    android:contentDescription="Search Icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feast mode\n on"
+                    android:textColor="#92130A"
+                    android:fontFamily="cursive"
+                    android:textSize="30dp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="88dp"
+                    android:layout_height="93dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/food5"
+                    android:contentDescription="Search Icon" />
+
+            </LinearLayout>
+
+
+            <!-- food offer scrolling-->
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="80dp"
+                    android:text=" EnjoyUp To\n $750 OFF\n>>"
+                    android:textColor="#FC8019"
+                    android:background="@drawable/search_box_background"
+                    android:layout_height="50dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginBottom="10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80dp"
+                    android:text=" EnjoyUp To\n $550 OFF\n>>"
+                    android:textColor="#FC8019"
+                    android:background="@drawable/search_box_background"
+                    android:layout_height="50dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginBottom="10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80dp"
+                    android:text=" EnjoyUp To\n $500 OFF\n>>"
+                    android:textColor="#FC8019"
+                    android:background="@drawable/search_box_background"
+                    android:layout_height="50dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginBottom="10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80dp"
+                    android:text=" EnjoyUp To\n $250 OFF\n>>"
+                    android:textColor="#FC8019"
+                    android:background="@drawable/search_box_background"
+                    android:layout_height="50dp"/>
+
+
+            </LinearLayout>
+            <!-- horizontal sliding portion-->
+
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- First Card -->
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Text Message -->
+                    <TextView
+                        android:id="@+id/text_message_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Unlimited Offers! \nOn first orders"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <!-- Button -->
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/order_button_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/search_box_background"
+                        android:padding="8dp"
+                        android:text="ORDER NOW >>>"
+                        android:textColor="#FC8019" />
+
+                </LinearLayout>
+
+                <!-- Second Card -->
+                <LinearLayout
+                    android:background="@drawable/bg1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Text Message -->
+                    <TextView
+                        android:id="@+id/text_message_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Yummy Delights! \nget upto 30% off on delicacies food"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <!-- Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/order_button_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/search_box_background"
+                        android:padding="8dp"
+                        android:text="ORDER NOW >>>"
+                        android:textColor="#FC8019" />
+                </LinearLayout>
+
+                <!-- Third Card (Optional) -->
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Text Message -->
+                    <TextView
+                        android:id="@+id/text_message_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Special Discounts! \nLimited Time Offer"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <!-- Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/order_button_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/search_box_background"
+                        android:padding="8dp"
+                        android:text="ORDER NOW >>>"
+                        android:textColor="#FC8019" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dona,what's on your mind?"/>
+
+            <!--slinding of food in horizontal manner-->
+            <HorizontalScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="16dp"
+                android:background="#ffffff">
+
+                <!-- Horizontal linear layout for images and text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- First Image with Name -->
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food1"
+                            android:contentDescription="Salad"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salad"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <!-- Second Image with Name -->
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food2"
+                            android:contentDescription="Pizza"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Third Image with Name -->
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food3"
+                            android:contentDescription="Burger"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Fourth Image with Name -->
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food4"
+                            android:contentDescription="Pasta"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pasta\nCrystal Kitchen\nPrice"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Fifth Image with Name -->
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food5"
+                            android:contentDescription="Sushi"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sushi"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <!-- sixth Image with Name -->
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food7"
+                            android:contentDescription="Sushi"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biriyani"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <!-- seventh Image with Name -->
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food6"
+                            android:contentDescription="fries"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sushi"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick picks for you"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- First Image with Name -->
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/food1"
+                        android:contentDescription="Salad"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salad\n Angamaly Daba\n price:100"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- Second Image with Name -->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/food2"
+                        android:contentDescription="Pizza"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza\nThe Night Cafe\n price:300 "
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Third Image with Name -->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/food3"
+                        android:contentDescription="Burger"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burger\nchicking\nprice:120"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Fourth Image with Name -->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/food4"
+                        android:contentDescription="Pasta"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pasta\nCrystal Kitchen\nPrice"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!-- Fifth Image with Name -->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/food5"
+                        android:contentDescription="Sushi"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sushi\nBurg and Broast\nprice:400"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/food6"
+                        android:contentDescription="Sushi"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biriyani\nchicking\nprice:200"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
